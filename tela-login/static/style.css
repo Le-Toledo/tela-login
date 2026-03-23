@@ -1,0 +1,84 @@
+body {
+  font-family: Arial;
+  background: linear-gradient(135deg, #0f172a, lab(4.31% 0 0));
+  color: white;
+  margin: 0;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* 🔥 CARD BONITO */
+.form-card {
+  background: #020617;
+  padding: 30px;
+  border-radius: 15px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.form-card h2 {
+  margin-bottom: 20px;
+}
+
+/* 🔥 INPUT BONITO */
+.form-card input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+/* 🔥 BOTÃO */
+.form-card button {
+  width: 100%;
+  padding: 12px;
+  background: #22c55e;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.form-card button:hover {
+  background: #16a34a;
+}
+
+/* 🔗 LINK */
+.link {
+  color: hsl(17, 93%, 60%);
+  text-decoration: none;
+}
+.navbar a {
+  color: #38bdf8;
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+  transition: 0.3s;
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background: #22c55e;
+  transition: 0.3s;
+}
+.navbar a:hover::after {
+  width: 100%;
+}
+
+.navbar a:hover {
+  color: #22c55e;
+}

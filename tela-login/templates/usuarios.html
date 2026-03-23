@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block conteudo %}
+
+<h1>Usuários cadastrados</h1>
+
+<ul>
+    {% for user in usuarios %}
+        <li>{{ user[1] }}</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

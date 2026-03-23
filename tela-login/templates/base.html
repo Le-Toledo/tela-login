@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sistema</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<nav class="navbar">
+    <h2>Meu Sistema</h2>
+
+    <div>
+        <a href="/dashboard">Dashboard</a>
+        <a href="/usuarios">Usuários</a>
+        <a href="/logout">Sair</a>
+    </div>
+</nav>
+
+<div class="container">
+    {% block conteudo %}{% endblock %}
+</div>
+
+</body>
+</html>
